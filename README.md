@@ -8,10 +8,12 @@ docker-compose up
 ```
 
 ## From OBS
+```
 Settings -> Stream
 Stream Type : Custom Streaming Server
 URL : rtmp://localhost:1935/live
 Stream key : STREAM_NAME
+```
 
 ## Accessing the live stream
 ```
