@@ -1,0 +1,14 @@
+{
+  "name": "node-rtmp-hls",
+  "version": "1.0.0",
+  "main": "./src",
+  "license": "MIT",
+  "dependencies": {
+    "mkdirp": "^0.5.1",
+    "node-media-server": "^2.1.4"
+  },
+  "scripts": {
+    "start": "node src/index.js",
+    "dev": "nodemon src/index.js"
+  }
+}

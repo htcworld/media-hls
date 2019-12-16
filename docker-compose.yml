@@ -1,0 +1,11 @@
+version: '2'
+services:
+  media-server:
+    build:
+      context: ./
+    volumes:
+      - ./:/app
+    ports:
+      - 8000:8000
+      - 1935:1935
+    command: ['yarn', 'dev']
