@@ -4,7 +4,8 @@ services:
     build:
       context: ./
     volumes:
-      - ./:/app
+      - ./src:/app/src
+      - ./media:/app/media
     ports:
       - 8000:8000
       - 1935:1935
