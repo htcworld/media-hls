@@ -6,8 +6,6 @@
   "dependencies": {
     "mkdirp": "^0.5.1",
     "node-media-server": "^2.1.4"
-  },
-    "dependencies": {
     "@ffmpeg-installer/ffmpeg": "latest"
   },
   "scripts": {
