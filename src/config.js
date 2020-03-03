@@ -39,7 +39,7 @@ module.exports = {
     ]
   },
   trans: {
-    ffmpeg: '/usr/bin/ffmpeg',
+    ffmpeg: 'usr/bin/ffmpeg',
     tasks: [
       {
         app: 'hls_1080p',
