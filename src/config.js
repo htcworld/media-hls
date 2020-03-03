@@ -1,5 +1,5 @@
 const path = require('path')
-
+const ffmpeg = require('@ffmpeg-installer/ffmpeg')
 module.exports = {
   rtmp: {
     port: 1935,
@@ -14,7 +14,7 @@ module.exports = {
     mediaroot: path.resolve(__dirname, './../media'),
   },
   relay: {
-    ffmpeg: 'usr/bin/ffmpeg',
+    ffmpeg: 'ffmpeg',
     tasks: [
       {
         app: 'live',
