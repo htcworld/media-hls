@@ -1,5 +1,9 @@
 const path = require('path')
+<<<<<<< HEAD
 
+=======
+const ffmpegu = require('@ffmpeg-installer/ffmpeg')
+>>>>>>> 06fbd9dd4c13b8a369cee4efd04822a12c0d2ef8
 module.exports = {
   rtmp: {
     port: 1935,
@@ -14,7 +18,11 @@ module.exports = {
     mediaroot: path.resolve(__dirname, './../media'),
   },
   relay: {
+<<<<<<< HEAD
     ffmpeg: 'usr/bin/ffmpeg',
+=======
+    ffmpeg: 'ffmpegu',
+>>>>>>> 06fbd9dd4c13b8a369cee4efd04822a12c0d2ef8
     tasks: [
       {
         app: 'live',
@@ -39,7 +47,11 @@ module.exports = {
     ]
   },
   trans: {
+<<<<<<< HEAD
     ffmpeg: 'usr/bin/ffmpeg',
+=======
+    ffmpeg: 'ffmpegu',
+>>>>>>> 06fbd9dd4c13b8a369cee4efd04822a12c0d2ef8
     tasks: [
       {
         app: 'hls_1080p',
@@ -75,4 +87,8 @@ module.exports = {
       }
     ]
   }
+<<<<<<< HEAD
 };
+=======
+};
+>>>>>>> 06fbd9dd4c13b8a369cee4efd04822a12c0d2ef8
