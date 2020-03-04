@@ -1,5 +1,5 @@
 const path = require('path')
-const ffmpeg = require('@ffmpeg-installer/ffmpeg')
+const ffmpegu = require('@ffmpeg-installer/ffmpeg')
 module.exports = {
   rtmp: {
     port: 1935,
@@ -14,7 +14,7 @@ module.exports = {
     mediaroot: path.resolve(__dirname, './../media'),
   },
   relay: {
-    ffmpeg: 'ffmpeg',
+    ffmpeg: 'ffmpegu',
     tasks: [
       {
         app: 'live',
@@ -39,7 +39,7 @@ module.exports = {
     ]
   },
   trans: {
-    ffmpeg: 'usr/bin/ffmpeg',
+    ffmpeg: 'ffmpegu',
     tasks: [
       {
         app: 'hls_1080p',
