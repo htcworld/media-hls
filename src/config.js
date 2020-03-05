@@ -40,7 +40,7 @@ module.exports = {
     ]
   },
   trans: {
-    ffmpeg: Ffmpeg.path',
+    ffmpeg: Ffmpeg.path,
     tasks: [
       {
         app: 'hls_1080p',
