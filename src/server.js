@@ -4,6 +4,10 @@ const app = express()
 app.get('/', function (req, res) {
   res.send('Hello World')
 })
+var port = process.env.port || 3000;
+app.listen(port, () => {
+    console.log('listen 3000!')
+});
 const NodeMediaServer = require('node-media-server');
 
 const config = require('./config')
@@ -20,4 +24,4 @@ nms.on('prePublish', (id, StreamPath, args) => {
 });
 
 nms.run();
-app.listen(3000);
+
