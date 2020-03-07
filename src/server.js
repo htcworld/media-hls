@@ -1,3 +1,9 @@
+const express = require('express')
+const app = express()
+ 
+app.get('/', function (req, res) {
+  res.send('Hello World')
+})
 const NodeMediaServer = require('node-media-server');
 
 const config = require('./config')
@@ -14,3 +20,4 @@ nms.on('prePublish', (id, StreamPath, args) => {
 });
 
 nms.run();
+app.listen(3000);
